@@ -16,7 +16,6 @@ const TodoList: React.FC<TodoListProps> = ({
 }) => {
   return (
     <div className={styles.wrapper}>
-      {title && <h3>{title}</h3>}
       <ul>
         {todos.map((todo) => (
           <TodoItem

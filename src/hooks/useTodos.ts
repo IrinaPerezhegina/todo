@@ -6,10 +6,10 @@ export interface Todo {
   completed: boolean;
 }
 const initialTodos: Todo[] = [
-  { id: 1, text: "Тестовое задание", completed: false },
-  { id: 2, text: "Покрытие тестами", completed: false },
-  { id: 3, text: "Прекрасный код", completed: false },
-  { id: 4, text: "Закончен проект", completed: true },
+  { id: 1, text: "Тестовое задание", completed: true },
+  { id: 2, text: "Покрытие тестами", completed: true },
+  { id: 3, text: "Прекрасный код", completed: true },
+  { id: 4, text: "Закончен проект", completed: false },
 ];
 export function useTodos() {
   const [todos, setTodos] = useState<Todo[]>(initialTodos);
